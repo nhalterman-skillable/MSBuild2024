@@ -1,15 +1,115 @@
 {
     "if": {
         "not": {
-            "field": "type",
-            "in": [
-                "Microsoft.OperationalInsights/workspaces",
-                "Microsoft.App/managedEnvironments",
-                "Microsoft.App/containerApps"
-             ]
+            "allOf": [
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.OperationalInsights/workspaces"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/managedEnvironments"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "music-env"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "qdrant"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "music-jupyter"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "music-backend"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "music-frontend"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     },
     "then": {
-        "effect": "deny"
+        "effect": "Deny"
     }
 }
