@@ -1,1 +1,40 @@
-
+{
+    "value": [
+        {
+            "id": "/subscriptions/350ef6bc-6fae-4738-a96b-1e3859eb94fb/resourceGroups/music-rec-service/providers/Microsoft.OperationalInsights/workspaces/workspace-musicrecservicefz6i",
+            "name": "workspace-musicrecservicefz6i",
+            "type": "Microsoft.OperationalInsights/workspaces",
+            "location": "westus2"
+        },
+        {
+            "id": "/subscriptions/350ef6bc-6fae-4738-a96b-1e3859eb94fb/resourceGroups/music-rec-service/providers/Microsoft.App/managedEnvironments/music-env",
+            "name": "music-env",
+            "type": "Microsoft.App/managedEnvironments",
+            "location": "westus2"
+        },
+        {
+            "id": "/subscriptions/350ef6bc-6fae-4738-a96b-1e3859eb94fb/resourceGroups/music-rec-service/providers/Microsoft.App/containerApps/qdrant",
+            "name": "qdrant",
+            "type": "Microsoft.App/containerApps",
+            "location": "westus2"
+        },
+        {
+            "id": "/subscriptions/350ef6bc-6fae-4738-a96b-1e3859eb94fb/resourceGroups/music-rec-service/providers/Microsoft.App/containerApps/music-jupyter",
+            "name": "music-jupyter",
+            "type": "Microsoft.App/containerApps",
+            "location": "westus2"
+        },
+        {
+            "id": "/subscriptions/350ef6bc-6fae-4738-a96b-1e3859eb94fb/resourceGroups/music-rec-service/providers/Microsoft.App/containerApps/music-backend",
+            "name": "music-backend",
+            "type": "Microsoft.App/containerApps",
+            "location": "westus2"
+        },
+        {
+            "id": "/subscriptions/350ef6bc-6fae-4738-a96b-1e3859eb94fb/resourceGroups/music-rec-service/providers/Microsoft.App/containerApps/music-frontend",
+            "name": "music-frontend",
+            "type": "Microsoft.App/containerApps",
+            "location": "westus2"
+        }
+    ]
+}

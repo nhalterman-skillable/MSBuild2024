@@ -1,0 +1,15 @@
+{
+    "if": {
+        "not": {
+            "field": "type",
+            "in": [
+                "Microsoft.OperationalInsights/workspaces",
+                "Microsoft.App/managedEnvironments",
+                "Microsoft.App/containerApps"
+             ]
+        }
+    },
+    "then": {
+        "effect": "deny"
+    }
+}
