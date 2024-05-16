@@ -1,78 +1,14 @@
 {
     "if": {
-        "not": {
+        "not":{
             "anyOf": [
                 {
-                    "allOf": [
-                        {
-                            "field": "type",
-                            "equals": "Microsoft.ContainerRegistry/registries"
-                        },
-                        {
-                            "field": "Microsoft.ContainerRegistry/registries/sku.name",
-                            "equals": "Standard"
-                        },
-                        {
-                            "field": "Microsoft.ContainerRegistry/registries/tier.name",
-                            "equals": "Standard"
-                        },
-                        {
-                            "field": "type",
-                            "equals": "Microsoft.Storage/storageAccounts"
-                        },
-                        {
-                            "field": "Microsoft.Storage/storageAccounts/sku.name",
-                            "equals": "Standard_LRS"
-                        },
-                        {
-                            "field": "Microsoft.Storage/storageAccounts/sku.tier",
-                            "equals": "Standard"
-                        },
-                        {
-                            "field": "type",
-                            "equals": "Microsoft.Search/searchServices"
-                        },
-                        {
-                            "field": "Microsoft.Search/searchServices/sku.name",
-                            "equals": "Standard"
-                        },
-                        {
-                            "field": "type",
-                            "equals": "Microsoft.CognitiveServices/accounts"
-                        },
-                        {
-                            "field": "Microsoft.CognitiveServices/accounts/sku.name",
-                            "equals": "S0"
-                        },
-                        {
-                            "field": "type",
-                            "equals": "Microsoft.MachineLearningServices/workspaces"
-                        },
-                        {
-                            "field": "Microsoft.MachineLearningServices/workspaces/sku.name",
-                            "equals": "Basic"
-                        },
-                        {
-                            "field": "Microsoft.MachineLearningServices/workspaces/sku.tier",
-                            "equals": "Basic"
-                        },
-                        {
-                            "field": "type",
-                            "equals": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments"
-                        },
-                        {
-                            "field": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments/sku.name",
-                            "equals": "Default"
-                        },
-                        {
-                            "field": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments/sku.tier",
-                            "equals": "Standard"
-                        },
-                        {
-                            "field": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments/sku.capacity",
-                            "equals": 3
-                        }
-                    ]
+                    "field": "type",
+                    "contains":"Microsoft.CognitiveServices/accounts"
+                },
+                {
+                    "field": "type",
+                    "contains":"Microsoft.KeyVault/vaults"
                 },
                 {
                     "field": "type",
@@ -80,7 +16,7 @@
                 },
                 {
                     "field": "type",
-                    "contains": "Microsoft.KeyVault/vaults"
+                    "contains": "Microsoft.Search/searchServices"
                 },
                 {
                     "field": "type",
@@ -88,7 +24,19 @@
                 },
                 {
                     "field": "type",
-                    "contains": "Microsoft.Insights/component"
+                    "contains": "Microsoft.ContainerRegistry/registries"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Storage/storageAccounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Insights/components"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.MachineLearningServices/workspaces"
                 },
                 {
                     "field": "type",
@@ -97,9 +45,13 @@
                 {
                     "field": "type",
                     "contains": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments"
                 }
             ]
-        }
+        }    
     },
     "then": {
         "effect": "Deny"
