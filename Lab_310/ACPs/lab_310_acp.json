@@ -1,0 +1,143 @@
+{
+    "if": {
+        "not": {
+            "allOf": [
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.OperationalInsights/workspaces"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "workspace-musicservice"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/managedEnvironments"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "music-env"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "qdrant"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "music-jupyter"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id"   ,
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "music-backend"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "music-frontend"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "westus2"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "Deny"
+    }
+}
