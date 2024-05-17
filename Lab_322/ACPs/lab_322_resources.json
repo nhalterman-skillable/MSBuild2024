@@ -1,0 +1,132 @@
+{
+    "value": [
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.ContainerRegistry/registries/acrcontoso40706350",
+            "name": "acrcontoso40706350",
+            "type": "Microsoft.ContainerRegistry/registries",
+            "sku": {
+                "name": "Standard",
+                "tier": "Standard"
+            },
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-contoso40706350",
+            "name": "cosmos-contoso40706350",
+            "type": "Microsoft.DocumentDB/databaseAccounts",
+            "kind": "GlobalDocumentDB",
+            "location": "swedencentral",
+            "tags": {
+                "defaultExperience": "Core (SQL)",
+                "hidden-cosmos-mmspecial": ""
+            }
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.Storage/storageAccounts/stcontoso40706350",
+            "name": "stcontoso40706350",
+            "type": "Microsoft.Storage/storageAccounts",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "StorageV2",
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.KeyVault/vaults/kv-contoso40706350",
+            "name": "kv-contoso40706350",
+            "type": "Microsoft.KeyVault/vaults",
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.Search/searchServices/search-contoso40706350",
+            "name": "search-contoso40706350",
+            "type": "Microsoft.Search/searchServices",
+            "sku": {
+                "name": "standard"
+            },
+            "location": "eastus"
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.OperationalInsights/workspaces/apws-contosochatsfai362802272292",
+            "name": "apws-contosochatsfai362802272292",
+            "type": "Microsoft.OperationalInsights/workspaces",
+            "location": "swedencentral"
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.CognitiveServices/accounts/oai-contoso40706350",
+            "name": "oai-contoso40706350",
+            "type": "Microsoft.CognitiveServices/accounts",
+            "sku": {
+                "name": "S0"
+            },
+            "kind": "AIServices",
+            "location": "swedencentral"
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.Insights/components/appi-contoso40706350",
+            "name": "appi-contoso40706350",
+            "type": "Microsoft.Insights/components",
+            "kind": "web",
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.MachineLearningServices/workspaces/contoso-chat-sf-ai40706350",
+            "name": "contoso-chat-sf-ai40706350",
+            "type": "Microsoft.MachineLearningServices/workspaces",
+            "sku": {
+                "name": "Basic",
+                "tier": "Basic"
+            },
+            "kind": "Hub",
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.MachineLearningServices/workspaces/contoso-chat-sf-aiproj",
+            "name": "contoso-chat-sf-aiproj",
+            "type": "Microsoft.MachineLearningServices/workspaces",
+            "sku": {
+                "name": "Basic",
+                "tier": "Basic"
+            },
+            "kind": "Project",
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/microsoft.insights/actiongroups/Application Insights Smart Detection",
+            "name": "Application Insights Smart Detection",
+            "type": "microsoft.insights/actiongroups",
+            "location": "global"
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.MachineLearningServices/workspaces/contoso-chat-sf-aiproj/onlineEndpoints/contoso-chat-sf-aiproj-kjygm",
+            "name": "contoso-chat-sf-aiproj/contoso-chat-sf-aiproj-kjygm",
+            "type": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints",
+            "kind": "Managed",
+            "location": "swedencentral",
+            "tags": {
+                "promptflow.source_resource_id": "azureml://locations/swedencentral/workspaces/cb044a03-5bbd-43c6-ae6e-2289084dd710/flows/b3fda6dc-90ee-47cc-ad82-04613bd856ac",
+                "promptflow.source_flow_id": "b3fda6dc-90ee-47cc-ad82-04613bd856ac"
+            }
+        },
+        {
+            "id": "/subscriptions/fd49bc4c-0cb5-41e1-9867-ab9e5a54f057/resourceGroups/contoso-chat-rg/providers/Microsoft.MachineLearningServices/workspaces/contoso-chat-sf-aiproj/onlineEndpoints/contoso-chat-sf-aiproj-kjygm/deployments/contoso-chat-sf-aiproj-kjygm-1",
+            "name": "contoso-chat-sf-aiproj/contoso-chat-sf-aiproj-kjygm/contoso-chat-sf-aiproj-kjygm-1",
+            "type": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments",
+            "sku": {
+                "name": "Default",
+                "tier": "Standard",
+                "capacity": 3
+            },
+            "kind": "Managed",
+            "location": "swedencentral",
+            "tags": {}
+        }
+    ]
+}
