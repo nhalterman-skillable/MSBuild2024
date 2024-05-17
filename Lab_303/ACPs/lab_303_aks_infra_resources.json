@@ -1,0 +1,100 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/4c751b24-c127-4d92-923d-37d75a6c8595/resourceGroups/buildlab3033dfqhg-aksInfraRG/providers/Microsoft.Network/publicIPAddresses/bed8a719-d75a-4c21-b980-2ade1c84dbb2",
+      "name": "bed8a719-d75a-4c21-b980-2ade1c84dbb2",
+      "type": "Microsoft.Network/publicIPAddresses",
+      "sku": {
+        "name": "Standard"
+      },
+      "location": "australiaeast",
+      "tags": {
+        "aks-managed-cluster-name": "buildlab3033dfqhgaks",
+        "aks-managed-cluster-rg": "LocationRG",
+        "aks-managed-type": "aks-slb-managed-outbound-ip"
+      }
+    },
+    {
+      "id": "/subscriptions/4c751b24-c127-4d92-923d-37d75a6c8595/resourceGroups/buildlab3033dfqhg-aksinfrarg/providers/Microsoft.Network/loadBalancers/kubernetes",
+      "name": "kubernetes",
+      "type": "Microsoft.Network/loadBalancers",
+      "sku": {
+        "name": "Standard"
+      },
+      "location": "australiaeast",
+      "tags": {
+        "aks-managed-cluster-name": "buildlab3033dfqhgaks",
+        "aks-managed-cluster-rg": "LocationRG"
+      }
+    },
+    {
+      "id": "/subscriptions/4c751b24-c127-4d92-923d-37d75a6c8595/resourceGroups/buildlab3033dfqhg-aksInfraRG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/azurekeyvaultsecretsprovider-buildlab3033dfqhgaks",
+      "name": "azurekeyvaultsecretsprovider-buildlab3033dfqhgaks",
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "location": "australiaeast",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/4c751b24-c127-4d92-923d-37d75a6c8595/resourceGroups/buildlab3033dfqhg-aksInfraRG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/buildlab3033dfqhgaks-agentpool",
+      "name": "buildlab3033dfqhgaks-agentpool",
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "location": "australiaeast",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/4c751b24-c127-4d92-923d-37d75a6c8595/resourceGroups/buildlab3033dfqhg-aksinfrarg/providers/Microsoft.Network/networkSecurityGroups/aks-agentpool-15041872-nsg",
+      "name": "aks-agentpool-15041872-nsg",
+      "type": "Microsoft.Network/networkSecurityGroups",
+      "location": "australiaeast",
+      "tags": {}
+    },
+    {
+      "id": "/subscriptions/4c751b24-c127-4d92-923d-37d75a6c8595/resourceGroups/buildlab3033dfqhg-aksInfraRG/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-12363667-vmss",
+      "name": "aks-default-12363667-vmss",
+      "type": "Microsoft.Compute/virtualMachineScaleSets",
+      "sku": {
+        "name": "Standard_D4s_v3",
+        "tier": "Standard",
+        "capacity": 3
+      },
+      "location": "australiaeast",
+      "tags": {
+        "aks-managed-consolidated-additional-properties": "1979f220-145d-11ef-b9c8-2eb3e36f14df",
+        "aks-managed-createOperationID": "dfe82a39-6383-4dad-9d5a-c96d7112406a",
+        "aks-managed-creationSource": "vmssclient-aks-default-12363667-vmss",
+        "aks-managed-kubeletIdentityClientID": "e4de439e-74df-4a3a-919c-8b87e6127922",
+        "aks-managed-orchestrator": "Kubernetes:1.28.9",
+        "aks-managed-poolName": "default",
+        "aks-managed-resourceNameSuffix": "15041872",
+        "aks-managed-ssh-access": "LocalUser",
+        "aks-managed-coordination": "true"
+      }
+    },
+    {
+      "id": "/subscriptions/4c751b24-c127-4d92-923d-37d75a6c8595/resourceGroups/buildlab3033dfqhg-aksinfrarg/providers/Microsoft.Network/publicIPAddresses/kubernetes-a9ab9031333854d21a9eede2cc1aedca",
+      "name": "kubernetes-a9ab9031333854d21a9eede2cc1aedca",
+      "type": "Microsoft.Network/publicIPAddresses",
+      "sku": {
+        "name": "Standard"
+      },
+      "location": "australiaeast",
+      "tags": {
+        "k8s-azure-cluster-name": "kubernetes",
+        "k8s-azure-service": "default/store-front"
+      }
+    },
+    {
+      "id": "/subscriptions/4c751b24-c127-4d92-923d-37d75a6c8595/resourceGroups/buildlab3033dfqhg-aksinfrarg/providers/Microsoft.Network/publicIPAddresses/kubernetes-a4d80a82233bc4b51b0467a8e44ae7f5",
+      "name": "kubernetes-a4d80a82233bc4b51b0467a8e44ae7f5",
+      "type": "Microsoft.Network/publicIPAddresses",
+      "sku": {
+        "name": "Standard"
+      },
+      "location": "australiaeast",
+      "tags": {
+        "k8s-azure-cluster-name": "kubernetes",
+        "k8s-azure-service": "default/store-admin"
+      }
+    }
+  ]
+}
