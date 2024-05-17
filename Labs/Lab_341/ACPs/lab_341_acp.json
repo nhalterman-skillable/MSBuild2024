@@ -1,38 +1,152 @@
 {
     "if": {
         "not": {
-            "anyOf": [
+            "allOf": [
                 {
-                "allOf": [
-                    {
-                    "field": "type",
-                    "equals": "Microsoft.ContainerRegistry/registries"
-                    },
-                    {
-                    "field": "Microsoft.ContainerRegistry/registries/sku.name",
-                    "equals": "Basic"
-                    },
-                    {
-                    "field": "Microsoft.ContainerRegistry/registries/sku.tier",
-                    "equals": "Basic"
-                    }
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.ContainerRegistry/registries"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-demolab/"
+                        },
+                        {
+                            "field": "Microsoft.ContainerRegistry/registries/sku.name",
+                            "equals": "Basic"
+                        },
+                        {
+                            "field": "Microsoft.ContainerRegistry/registries/sku.tier",
+                            "equals": "Basic"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
                     ]
                 },
                 {
-                    "field": "type",
-                    "contains": "Microsoft.ManagedIdentity/userAssignedIdentities"
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.ManagedIdentity/userAssignedIdentities"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-demolab/"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "field": "type",
-                    "contains": "Microsoft.OperationalInsights/workspaces"
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.OperationalInsights/workspaces"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-demolab/"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "field": "type",
-                    "contains": "Microsoft.App/managedEnvironments"
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/managedEnvironments"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-demolab/"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "field": "type",
-                    "contains": "Microsoft.App/containerApps"
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-demolab/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "products"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-demolab/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "redis"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-demolab/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "store"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
+                    ]
                 }
             ]
         }
