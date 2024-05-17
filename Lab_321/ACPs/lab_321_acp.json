@@ -1,0 +1,23 @@
+{
+    "if": {
+        "not": {
+            "anyOf": [
+                {
+                    "field": "type",
+                    "contains": "Microsoft.CognitiveServices/accounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Storage/storageAccounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Search/searchServices"
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "deny"
+    }
+}
