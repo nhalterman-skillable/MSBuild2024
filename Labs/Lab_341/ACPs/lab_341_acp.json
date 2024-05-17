@@ -1,0 +1,43 @@
+{
+    "if": {
+        "not": {
+            "anyOf": [
+                {
+                "allOf": [
+                    {
+                    "field": "type",
+                    "equals": "Microsoft.ContainerRegistry/registries"
+                    },
+                    {
+                    "field": "Microsoft.ContainerRegistry/registries/sku.name",
+                    "equals": "Basic"
+                    },
+                    {
+                    "field": "Microsoft.ContainerRegistry/registries/sku.tier",
+                    "equals": "Basic"
+                    }
+                    ]
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.ManagedIdentity/userAssignedIdentities"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.OperationalInsights/workspaces"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.App/managedEnvironments"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.App/containerApps"
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "Deny"
+    }
+}
