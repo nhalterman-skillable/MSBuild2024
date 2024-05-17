@@ -1,0 +1,23 @@
+{
+    "value": [
+        {
+            "id": "/subscriptions/bddc632d-b221-4284-9730-dbbb58d55a2f/resourceGroups/myEdgeRg/providers/Microsoft.Storage/storageAccounts/buildlabesa4yqxzzzirospq",
+            "name": "buildlabesa4yqxzzzirospq",
+            "type": "Microsoft.Storage/storageAccounts",
+            "sku": {
+                "name": "Standard_RAGRS",
+                "tier": "Standard"
+            },
+            "kind": "StorageV2",
+            "location": "eastus2",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/bddc632d-b221-4284-9730-dbbb58d55a2f/resourceGroups/myEdgeRg/providers/Microsoft.Kubernetes/connectedClusters/myCluster",
+            "name": "myCluster",
+            "type": "Microsoft.Kubernetes/connectedClusters",
+            "location": "eastus2",
+            "tags": {}
+        }
+    ]
+}
