@@ -6,7 +6,15 @@
                     "anyOf": [
                         {
                             "field": "type",
-                            "contains": "Microsoft.OperationalInsights/workspaces"
+                            "equals": "Microsoft.OperationalInsights/workspaces"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "workspace-musicservice"
                         },
                         {
                             "field": "location",
@@ -21,6 +29,10 @@
                         {
                             "field": "type",
                             "contains": "Microsoft.App/managedEnvironments"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
                         },
                         {
                             "field": "name",
@@ -41,6 +53,10 @@
                             "contains": "Microsoft.App/containerApps"
                         },
                         {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
                             "field": "name",
                             "equals": "qdrant"
                         },
@@ -57,6 +73,10 @@
                         {
                             "field": "type",
                             "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
                         },
                         {
                             "field": "name",
@@ -77,6 +97,10 @@
                             "contains": "Microsoft.App/containerApps"
                         },
                         {
+                            "field": "id"   ,
+                            "contains": "/resourceGroups/music-rec-service/"
+                        },
+                        {
                             "field": "name",
                             "equals": "music-backend"
                         },
@@ -93,6 +117,10 @@
                         {
                             "field": "type",
                             "contains": "Microsoft.App/containerApps"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/music-rec-service/"
                         },
                         {
                             "field": "name",
