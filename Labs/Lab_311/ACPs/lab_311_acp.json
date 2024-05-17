@@ -6,45 +6,57 @@
                     "allOf": [
                         {
                             "field": "type",
-                            "equals": "Microsoft.Storage/storageAccounts"
+                            "equals": "Microsoft.web/serverfarms"
                         },
                         {
-                            "field": "Microsoft.Storage/storageAccounts/sku.name",
-                            "equals": "Standard_LRS"
-                        },
-                        {
-                            "field": "Microsoft.web/serverfarms/sku.tier",
-                            "equals": "Standard"
+                            "field": "id",
+                            "contains": "/resourceGroups/serverless-tollbooth/"
                         },
                         {
                             "field": "Microsoft.web/serverfarms/sku.capacity",
-                            "lessOrEquals": 1
+                            "lessOrEquals": 0
                         },
                         {
-                            "field": "type",
-                            "equals": "Microsoft.KeyVault/vaults"
+                            "field": "location",
+                            "In": [
+                                "[resourceGroup().location]"
+                            ]
                         },
                         {
-                            "field": "Microsoft.KeyVault/vaults/sku.family",
-                            "equals": "A"
-                        },
-                        {
-                            "field": "Microsoft.KeyVault/vaults/sku.name",
-                            "equals": "standard"
-                        },
-                        {
-                            "field": "type",
-                            "equals": "Microsoft.Web/serverfarms"
-                        },
-                        {
-                            "field": "Microsoft.Web/serverfarms/sku.name",
+                            "field": "Microsoft.web/serverfarms/sku.name",
                             "equals": "Y1"
-                        },
-                        {
-                            "field": "Microsoft.Web/serverfarms/sku.tier",
-                            "equals": "Dynamic"
                         }
                     ]
+                },
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.web/sites"
+                        },
+                        {
+                            "field": "location",
+                            "In": [
+                                "[resourceGroup().location]"
+                            ]
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/serverless-tollbooth/"
+                        }
+                    ]
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.KeyVault/vaults"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Storage/storageAccounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.EventGrid/topics"
                 },
                 {
                     "field": "type",
@@ -52,48 +64,25 @@
                 },
                 {
                     "field": "type",
-                    "contains": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
-                },
-                {
-                    "field": "type",
-                    "contains": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
-                },
-                {
-                    "field": "type",
-                    "contains": "Microsoft.Storage/storageAccounts/blobServices"
-                },
-                {
-                    "field": "type",
-                    "contains": "Microsoft.Storage/storageAccounts/blobServices/containers"
-                },
-                {
-                    "field": "type",
-                    "contains": "Microsoft.EventGrid/topics"
-                },
-                {
-                    "field": "type",
-                    "contains": "Microsoft.KeyVault/vaults/secrets"
-                },
-                {
-                    "field": "type",
-                    "contains": "Microsoft.EventGrid/topics"
-                },
-                {
-                    "field": "type",
                     "contains": "Microsoft.Insights/components"
                 },
                 {
                     "field": "type",
-                    "contains": "Microsoft.Web/sites"
+                    "contains": "Microsoft.CognitiveServices/accounts"
                 },
                 {
                     "field": "type",
-                    "contains": "Microsoft.Authorization/roleAssignments"
+                    "contains": "microsoft.insights/actiongroups"
+                },
+
+                {
+                    "field": "type",
+                    "contains": "Microsoft.EventGrid/systemTopics"
                 }
             ]
         }
     },
     "then": {
-        "effect": "Deny"
+        "effect": "deny"
     }
 }
