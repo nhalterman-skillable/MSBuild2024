@@ -1,0 +1,40 @@
+{
+    "value": [
+        {
+            "id": "/subscriptions/aecf0f47-e0e2-4d78-b553-b6e522d2747f/resourceGroups/ResourceGroup1/providers/Microsoft.Search/searchServices/search40781241",
+            "name": "search40781241",
+            "type": "Microsoft.Search/searchServices",
+            "sku": {
+                "name": "basic"
+            },
+            "location": "canadaeast",
+            "tags": {
+                "ProjectType": "aoai-your-data-service"
+            }
+        },
+        {
+            "id": "/subscriptions/aecf0f47-e0e2-4d78-b553-b6e522d2747f/resourceGroups/ResourceGroup1/providers/Microsoft.Storage/storageAccounts/labsotrage40781241",
+            "name": "labsotrage40781241",
+            "type": "Microsoft.Storage/storageAccounts",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "BlobStorage",
+            "location": "canadaeast",
+            "tags": {
+                "ProjectType": "aoai-your-data-service"
+            }
+        },
+        {
+            "id": "/subscriptions/aecf0f47-e0e2-4d78-b553-b6e522d2747f/resourceGroups/ResourceGroup1/providers/Microsoft.CognitiveServices/accounts/openai40781241",
+            "name": "openai40781241",
+            "type": "Microsoft.CognitiveServices/accounts",
+            "sku": {
+                "name": "S0"
+            },
+            "kind": "OpenAI",
+            "location": "canadaeast"
+        }
+    ]
+}
