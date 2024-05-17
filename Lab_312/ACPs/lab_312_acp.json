@@ -1,0 +1,59 @@
+{
+    "if": {
+        "not": {
+            "allOf": [
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.Storage/storageAccounts"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/myEdgeRg/"
+                        },
+                        {
+                            "field": "Microsoft.Storage/storageAccounts/sku.name",
+                            "equals": "Standard_RAGRS"
+                        },
+                        {
+                            "field": "Microsoft.Storage/storageAccounts/sku.tier",
+                            "equals": "Standard"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.Kubernetes/connectedClusters"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/myEdgeRg/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "myCluster"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "eastus2"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "Deny"
+    }
+}
