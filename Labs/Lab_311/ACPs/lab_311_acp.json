@@ -1,0 +1,99 @@
+{
+    "if": {
+        "not": {
+            "anyOf": [
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.Storage/storageAccounts"
+                        },
+                        {
+                            "field": "Microsoft.Storage/storageAccounts/sku.name",
+                            "equals": "Standard_LRS"
+                        },
+                        {
+                            "field": "Microsoft.web/serverfarms/sku.tier",
+                            "equals": "Standard"
+                        },
+                        {
+                            "field": "Microsoft.web/serverfarms/sku.capacity",
+                            "lessOrEquals": 1
+                        },
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.KeyVault/vaults"
+                        },
+                        {
+                            "field": "Microsoft.KeyVault/vaults/sku.family",
+                            "equals": "A"
+                        },
+                        {
+                            "field": "Microsoft.KeyVault/vaults/sku.name",
+                            "equals": "standard"
+                        },
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.Web/serverfarms"
+                        },
+                        {
+                            "field": "Microsoft.Web/serverfarms/sku.name",
+                            "equals": "Y1"
+                        },
+                        {
+                            "field": "Microsoft.Web/serverfarms/sku.tier",
+                            "equals": "Dynamic"
+                        }
+                    ]
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.DocumentDB/databaseAccounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Storage/storageAccounts/blobServices"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Storage/storageAccounts/blobServices/containers"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.EventGrid/topics"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.KeyVault/vaults/secrets"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.EventGrid/topics"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Insights/components"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Web/sites"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Authorization/roleAssignments"
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "Deny"
+    }
+}
