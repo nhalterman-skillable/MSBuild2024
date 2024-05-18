@@ -1,0 +1,68 @@
+{
+    "value": [
+        {
+            "id": "/subscriptions/5e429552-9708-4354-943b-85a06311db7d/resourceGroups/RG1/providers/Microsoft.CognitiveServices/accounts/aislab30140783586",
+            "name": "aislab30140783586",
+            "type": "Microsoft.CognitiveServices/accounts",
+            "sku": {
+                "name": "S0"
+            },
+            "kind": "AIServices",
+            "location": "swedencentral"
+        },
+        {
+            "id": "/subscriptions/5e429552-9708-4354-943b-85a06311db7d/resourceGroups/RG1/providers/Microsoft.KeyVault/vaults/kvault-lab301-40783586",
+            "name": "kvault-lab301-40783586",
+            "type": "Microsoft.KeyVault/vaults",
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/5e429552-9708-4354-943b-85a06311db7d/resourceGroups/RG1/providers/Microsoft.Storage/storageAccounts/stlab30140783586",
+            "name": "stlab30140783586",
+            "type": "Microsoft.Storage/storageAccounts",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "StorageV2",
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/5e429552-9708-4354-943b-85a06311db7d/resourceGroups/RG1/providers/Microsoft.ContainerRegistry/registries/crlab30140783586",
+            "name": "crlab30140783586",
+            "type": "Microsoft.ContainerRegistry/registries",
+            "sku": {
+                "name": "Premium",
+                "tier": "Premium"
+            },
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/5e429552-9708-4354-943b-85a06311db7d/resourceGroups/RG1/providers/Microsoft.MachineLearningServices/workspaces/aih-lab301-40783586",
+            "name": "aih-lab301-40783586",
+            "type": "Microsoft.MachineLearningServices/workspaces",
+            "sku": {
+                "name": "Basic",
+                "tier": "Basic"
+            },
+            "kind": "Hub",
+            "location": "swedencentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/5e429552-9708-4354-943b-85a06311db7d/resourceGroups/RG1/providers/Microsoft.MachineLearningServices/workspaces/aip-lab301-40783586",
+            "name": "aip-lab301-40783586",
+            "type": "Microsoft.MachineLearningServices/workspaces",
+            "sku": {
+                "name": "Basic",
+                "tier": "Basic"
+            },
+            "kind": "Project",
+            "location": "swedencentral",
+            "tags": {}
+        }
+    ]
+}
