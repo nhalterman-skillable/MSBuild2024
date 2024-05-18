@@ -1,0 +1,29 @@
+{
+    "if": {
+        "not": {
+            "anyOf": [
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.CognitiveServices/accounts"
+                        },
+                        {
+                           "field": "id",
+                           "contains": "/rg-openai-services/"
+                        },
+                        {
+                            "field": "location",
+                            "In": [
+                                "eastus"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "Deny"
+    }
+}
