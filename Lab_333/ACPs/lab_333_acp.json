@@ -1,0 +1,67 @@
+{
+  "if": {
+    "not": {
+      "anyOf": [
+        {
+          "allOf": [
+            {
+              "field": "type",
+              "equals": "Microsoft.DocumentDB/databaseAccounts"
+            },
+            {
+              "field": "kind",
+              "equals": "GlobalDocumentDB"
+            }
+          ]
+        },
+        {
+          "field": "type",
+          "equals": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+        },
+        {
+          "field": "type",
+          "equals": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+        },
+        {
+          "allOf": [
+            {
+              "field": "type",
+              "equals": "Microsoft.CognitiveServices/accounts"
+            },
+            {
+              "field": "kind",
+              "equals": "OpenAI"
+            },
+            {
+              "field": "location",
+              "equals": "[resourceGroup().location]"
+            }
+          ]
+        },
+        {
+          "field": "type",
+          "equals": "Microsoft.CognitiveServices/accounts/deployments"
+        },
+        {
+          "field": "type",
+          "equals": "Microsoft.Web/serverfarms"
+        },
+        {
+          "field": "type",
+          "equals": "Microsoft.Web/sites"
+        },
+        {
+          "field": "type",
+          "equals": "Microsoft.Web/sites/config"
+        },
+        {
+          "field": "type",
+          "equals": "Microsoft.Web/sites/sourcecontrols"
+        }
+      ]
+    }
+  },
+  "then": {
+    "effect": "deny"
+  }
+}
