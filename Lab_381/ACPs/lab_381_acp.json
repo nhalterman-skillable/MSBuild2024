@@ -1,0 +1,112 @@
+{
+    "if": {
+        "not": {
+            "anyOf": [
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.App/managedEnvironments"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "java-on-aca-env"
+                        },
+                        {
+                            "field": "location",
+                            "In": [
+                                "[resourceGroup().location]"
+                            ]
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/java-on-aca/"
+                        }
+                    ]
+                },
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.App/ContainerApps"
+                        },
+                        {
+                            "field": "name",
+                            "in": [
+                                "simple-app",
+                                "spring-cloud-microservice",
+                                "city-service",
+                                "weather-service",
+                                "gateway",
+                                "weather-app"
+                             ]
+                        },
+                        {
+                            "field": "location",
+                            "In": [
+                                "[resourceGroup().location]"
+                            ]
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/java-on-aca/"
+                        }
+                    ]
+                },
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.DocumentDB/databaseAccounts"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/java-on-aca/"
+                        },
+                        {
+                            "field": "location",
+                            "In": [
+                                "[resourceGroup().location]"
+                            ]
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },                  
+                {
+                    "field": "type",
+                    "contains": "Microsoft.CognitiveServices/accounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.App/builders"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.DBforMySQL/flexibleServers"
+                },
+                {
+                    "field": "type",
+                    "equals": "Microsoft.ContainerRegistry/registries"
+                },
+                {
+                    "field": "type",
+                    "equals": "Microsoft.OperationalInsights/workspaces"
+                }                
+            ]
+        }
+    },
+    "then": {
+        "effect": "deny"
+    }
+}
