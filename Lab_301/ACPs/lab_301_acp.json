@@ -1,0 +1,179 @@
+{
+    "if": {
+        "not": {
+            "allOf": [
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.CognitiveServices/accounts"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "aislab301"
+                        },
+                        {
+                            "field": "Microsoft.CognitiveServices/accounts/sku.name",
+                            "equals": "S0"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "swedencentral"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.KeyVault/vaults"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "kvault-lab301"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "swedencentral"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.Storage/storageAccounts"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "stlab301"
+                        },
+                        {
+                            "field": "Microsoft.Storage/storageAccounts/sku.name",
+                            "equals": "Standard_LRS"
+                        },
+                        {
+                            "field": "Microsoft.Storage/storageAccounts/sku.tier",
+                            "equals": "Standard"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "swedencentral"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.ContainerRegistry/registries"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "crlab301"
+                        },
+                        {
+                            "field": "Microsoft.ContainerRegistry/registries/sku.name",
+                            "equals": "Premium"
+                        },
+                        {
+                            "field": "Microsoft.ContainerRegistry/registries/sku.tier",
+                            "equals": "Premium"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "swedencentral"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.MachineLearningServices/workspaces"
+                        },
+                        {
+                            "field": "id"   ,
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "aih-lab301"
+                        },
+                        {
+                            "field": "Microsoft.MachineLearningServices/workspaces/sku.name",
+                            "equals": "Basic"
+                        },
+                        {
+                            "field": "Microsoft.MachineLearningServices/workspaces/sku.tier",
+                            "equals": "Basic"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "swedencentral"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.MachineLearningServices/workspaces"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "aip-lab301"
+                        },
+                        {
+                            "field": "Microsoft.MachineLearningServices/workspaces/sku.name",
+                            "contains": "Basic"
+                        },
+                        {
+                            "field": "Microsoft.MachineLearningServices/workspaces/sku.tier",
+                            "contains": "Basic"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "swedencentral"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "Deny"
+    }
+}
