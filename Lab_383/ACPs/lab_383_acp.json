@@ -1,0 +1,67 @@
+{
+    "if": {
+        "not": {
+            "anyOf": [
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.web/serverfarms"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "Microsoft.web/serverfarms/sku.capacity",
+                            "lessOrEquals": 1
+                        },
+                        {
+                            "field": "Microsoft.web/serverfarms/sku.name",
+                            "equals": "F1"
+                        }
+                    ]
+                },
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.web/sites"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "in": [
+                                "[concat('fruitapi-',resourcegroup().tags.LabInstance)]"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.OperationalInsights"
+                },
+                {
+                    "field": "type",
+                    "in":[                        
+                        "Microsoft.Network/networkInterfaces",
+                        "Microsoft.Network/networkSecurityGroups",                
+                        "Microsoft.Network/publicIPAddresses",
+                        "Microsoft.Network/virtualNetworks",
+                        "Microsoft.Network/networkWatchers",
+                        "Microsoft.Network/networkWatchers/flowlogs",
+                        "Microsoft.Network/networkWatchers/connectionMonitors",
+                        "Microsoft.Network/applicationSecurityGroups",
+                        "Microsoft.Network/loadBalancers"
+                        ]
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "deny"
+    }
+}
