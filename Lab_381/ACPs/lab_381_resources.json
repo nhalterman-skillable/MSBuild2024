@@ -1,0 +1,91 @@
+{
+    "value": [
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.DocumentDB/databaseAccounts/javalab-cosmos-l4y2rxh3iobsc",
+            "name": "javalab-cosmos-l4y2rxh3iobsc",
+            "type": "Microsoft.DocumentDB/databaseAccounts",
+            "kind": "GlobalDocumentDB",
+            "location": "eastus",
+            "tags": {
+                "defaultExperience": "Core (SQL)",
+                "hidden-cosmos-mmspecial": ""
+            }
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.DBforMySQL/flexibleServers/javalab-mysql-l4y2rxh3iobsc",
+            "name": "javalab-mysql-l4y2rxh3iobsc",
+            "type": "Microsoft.DBforMySQL/flexibleServers",
+            "sku": {
+                "name": "Standard_B1ms",
+                "tier": "Burstable"
+            },
+            "location": "eastus"
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.OperationalInsights/workspaces/workspace-test1oWv",
+            "name": "workspace-test1oWv",
+            "type": "Microsoft.OperationalInsights/workspaces",
+            "location": "canadacentral"
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.App/managedEnvironments/java-on-aca-env",
+            "name": "java-on-aca-env",
+            "type": "Microsoft.App/managedEnvironments",
+            "location": "canadacentral"
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.App/containerApps/simple-app",
+            "name": "simple-app",
+            "type": "Microsoft.App/containerApps",
+            "location": "canadacentral"
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.App/builders/builder8735d",
+            "name": "builder8735d",
+            "type": "Microsoft.App/builders",
+            "location": "canadacentral"
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.App/containerApps/spring-cloud-microservice",
+            "name": "spring-cloud-microservice",
+            "type": "Microsoft.App/containerApps",
+            "location": "canadacentral"
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.App/containerApps/city-service",
+            "name": "city-service",
+            "type": "Microsoft.App/containerApps",
+            "location": "canadacentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.App/containerApps/weather-service",
+            "name": "weather-service",
+            "type": "Microsoft.App/containerApps",
+            "location": "canadacentral",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.App/containerApps/gateway",
+            "name": "gateway",
+            "type": "Microsoft.App/containerApps",
+            "location": "canadacentral"
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.App/containerApps/weather-app",
+            "name": "weather-app",
+            "type": "Microsoft.App/containerApps",
+            "location": "canadacentral"
+        },
+        {
+            "id": "/subscriptions/20bcbd30-5580-4a2d-b778-df1872a7e250/resourceGroups/test/providers/Microsoft.CognitiveServices/accounts/AzureOpenAiResourceName",
+            "name": "AzureOpenAiResourceName",
+            "type": "Microsoft.CognitiveServices/accounts",
+            "sku": {
+                "name": "S0"
+            },
+            "kind": "OpenAI",
+            "location": "eastus"
+        }
+    ]
+}
