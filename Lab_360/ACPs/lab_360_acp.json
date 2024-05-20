@@ -109,71 +109,8 @@
                             "notEquals": "global"
                         }
                     ]
-                },
-                {
-                    "anyOf": [
-                        {
-                            "field": "type",
-                            "contains": "Microsoft.ContainerRegistry/registries"
-                        },
-                        {
-                            "field": "id",
-                            "contains": "/resourceGroups/RG1/"
-                        },
-                        {
-                            "field": "Microsoft.ContainerRegistry/registries/sku.name",
-                            "contains": "Basic"
-                        },
-                        {
-                            "field": "Microsoft.ContainerRegistry/registries/sku.tier",
-                            "contains": "Basic"
-                        },
-                        {
-                            "field": "location",
-                            "notEquals": "global"
-                        }
-                    ]
-                },
-                {
-                    "anyOf": [
-                        {
-                            "field": "type",
-                            "contains": "Microsoft.KeyVault/vaults"
-                        },
-                        {
-                            "field": "id",
-                            "contains": "/resourceGroups/RG1/"
-                        },
-                        {
-                            "field": "location",
-                            "notEquals": "global"
-                        }
-                    ]
-                }, 
-                {
-                    "anyOf": [
-                        {
-                            "field": "type",
-                            "contains": "Microsoft.ContainerInstance/containerGroups"
-                        },
-                        {
-                            "field": "id",
-                            "contains": "/resourceGroups/RG1/"
-                        },
-                        {
-                            "field": "name",
-                            "contains": "build"
-                        },
-                        {
-                            "field": "location",
-                            "notEquals": "global"
-                        }
-                    ]
                 }
             ]
         }
-    },
-    "then": {
-        "effect": "Deny"
     }
 }
