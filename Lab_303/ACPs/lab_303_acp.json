@@ -18,9 +18,7 @@
                         },
                         {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -40,9 +38,7 @@
                         },
                         {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -64,11 +60,9 @@
                             "field": "Microsoft.CognitiveServices/accounts/sku.name",
                             "equals": "S0"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -94,11 +88,9 @@
                             "field": "Microsoft.ContainerService/managedClusters/sku.tier",
                             "equals": "Free"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -118,9 +110,7 @@
                         },
                         {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -142,11 +132,9 @@
                             "field": "Microsoft.Network/loadBalancers/sku.name",
                             "equals": "Standard"
                         },
-                        {
+                      {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -160,11 +148,9 @@
                             "field": "id",
                             "contains": "aksInfraRG"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -178,11 +164,9 @@
                             "field": "id",
                             "contains": "aksInfraRG"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -198,9 +182,7 @@
                         },
                         {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -228,13 +210,11 @@
                         },
                         {
                             "field": "Microsoft.Compute/virtualMachineScaleSets/sku.capacity",
-                            "equals": 3
+                            "lessOrEquals": 3
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -258,9 +238,7 @@
                         },
                         {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 },
@@ -282,11 +260,9 @@
                             "field": "Microsoft.Network/publicIPAddresses/sku.name",
                             "equals": "Standard"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "australiaeast"
-                            ]
+                            "notEqals": "global"
                         }
                     ]
                 }
