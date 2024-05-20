@@ -22,9 +22,7 @@
                         },
                         {
                             "field": "location",
-                            "in": [
-                                "swedencentral"
-                            ]
+                            "notEquals": "global"
                         }
                     ]
                 },
@@ -42,11 +40,9 @@
                             "field": "name",
                             "contains": "kvault-lab301"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "swedencentral"
-                            ]
+                            "notEquals": "global"
                         }
                     ]
                 },
@@ -72,11 +68,9 @@
                             "field": "Microsoft.Storage/storageAccounts/sku.tier",
                             "equals": "Standard"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "swedencentral"
-                            ]
+                            "notEquals": "global"
                         }
                     ]
                 },
@@ -102,11 +96,9 @@
                             "field": "Microsoft.ContainerRegistry/registries/sku.tier",
                             "equals": "Premium"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "swedencentral"
-                            ]
+                            "notEquals": "global"
                         }
                     ]
                 },
@@ -132,11 +124,9 @@
                             "field": "Microsoft.MachineLearningServices/workspaces/sku.tier",
                             "equals": "Basic"
                         },
-                        {
+                       {
                             "field": "location",
-                            "in": [
-                                "swedencentral"
-                            ]
+                            "notEquals": "global"
                         }
                     ]
                 },
@@ -162,11 +152,9 @@
                             "field": "Microsoft.MachineLearningServices/workspaces/sku.tier",
                             "contains": "Basic"
                         },
-                        {
+                      {
                             "field": "location",
-                            "in": [
-                                "swedencentral"
-                            ]
+                            "notEquals": "global"
                         }
                     ]
                 }
