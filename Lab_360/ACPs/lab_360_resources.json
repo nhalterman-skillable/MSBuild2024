@@ -1,1 +1,63 @@
-{    "value": [        {            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.KeyVault/vaults/Project2-KV40851447",            "name": "Project2-KV40851447",            "type": "Microsoft.KeyVault/vaults",            "location": "centralus",            "tags": {}        },        {            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.Network/virtualNetworks/VNET1",            "name": "VNET1",            "type": "Microsoft.Network/virtualNetworks",            "location": "centralus"        },        {            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.Network/networkInterfaces/Project2CDVM_nic",            "name": "Project2CDVM_nic",            "type": "Microsoft.Network/networkInterfaces",            "location": "centralus"        },        {            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.Compute/virtualMachines/Project2CDVM",            "name": "Project2CDVM",            "type": "Microsoft.Compute/virtualMachines",            "location": "centralus"        },        {            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.Compute/disks/Project2CDVM_OsDisk_1_4436114f446c41fca8dc58f440aedc82",            "name": "Project2CDVM_OsDisk_1_4436114f446c41fca8dc58f440aedc82",            "type": "Microsoft.Compute/disks",            "sku": {                "name": "StandardSSD_LRS",                "tier": "Standard"            },            "location": "centralus"        },        {            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.ContainerRegistry/registries/crmjjpnw6nooeqw",            "name": "crmjjpnw6nooeqw",            "type": "Microsoft.ContainerRegistry/registries",            "sku": {                "name": "Basic",                "tier": "Basic"            },            "location": "centralus",            "tags": {}        },        {            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.KeyVault/vaults/ADOKV40851447",            "name": "ADOKV40851447",            "type": "Microsoft.KeyVault/vaults",            "location": "centralus",            "tags": {}        },        {            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.ContainerInstance/containerGroups/buildaci40851447",            "name": "buildaci40851447",            "type": "Microsoft.ContainerInstance/containerGroups",            "location": "centralus"        }    ]}
+{
+    "value": [
+        {
+            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.KeyVault/vaults/Project2-KV40851447",
+            "name": "Project2-KV40851447",
+            "type": "Microsoft.KeyVault/vaults",
+            "location": "centralus",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.Network/virtualNetworks/VNET1",
+            "name": "VNET1",
+            "type": "Microsoft.Network/virtualNetworks",
+            "location": "centralus"
+        },
+        {
+            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.Network/networkInterfaces/Project2CDVM_nic",
+            "name": "Project2CDVM_nic",
+            "type": "Microsoft.Network/networkInterfaces",
+            "location": "centralus"
+        },
+        {
+            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.Compute/virtualMachines/Project2CDVM",
+            "name": "Project2CDVM",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "centralus"
+        },
+        {
+            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.Compute/disks/Project2CDVM_OsDisk_1_4436114f446c41fca8dc58f440aedc82",
+            "name": "Project2CDVM_OsDisk_1_4436114f446c41fca8dc58f440aedc82",
+            "type": "Microsoft.Compute/disks",
+            "sku": {
+                "name": "StandardSSD_LRS",
+                "tier": "Standard"
+            },
+            "location": "centralus"
+        },
+        {
+            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.ContainerRegistry/registries/crmjjpnw6nooeqw",
+            "name": "crmjjpnw6nooeqw",
+            "type": "Microsoft.ContainerRegistry/registries",
+            "sku": {
+                "name": "Basic",
+                "tier": "Basic"
+            },
+            "location": "centralus",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.KeyVault/vaults/ADOKV40851447",
+            "name": "ADOKV40851447",
+            "type": "Microsoft.KeyVault/vaults",
+            "location": "centralus",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/cd637e62-a006-4bdd-916d-9f535a2b4fd3/resourceGroups/RG1/providers/Microsoft.ContainerInstance/containerGroups/buildaci40851447",
+            "name": "buildaci40851447",
+            "type": "Microsoft.ContainerInstance/containerGroups",
+            "location": "centralus"
+        }
+    ]
+}
