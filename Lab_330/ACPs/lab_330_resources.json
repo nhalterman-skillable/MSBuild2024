@@ -1,0 +1,21 @@
+{
+    "value": [
+        {
+            "id": "/subscriptions/4937e702-63bf-4210-b5b2-5c14f0a04386/resourceGroups/cosmosdb-aiassistant/providers/Microsoft.DocumentDB/mongoClusters/mongodb40848733",
+            "name": "mongodb40848733",
+            "type": "Microsoft.DocumentDB/mongoClusters",
+            "location": "northeurope",
+            "tags": {}
+        },
+        {
+            "id": "/subscriptions/4937e702-63bf-4210-b5b2-5c14f0a04386/resourceGroups/cosmosdb-aiassistant/providers/Microsoft.CognitiveServices/accounts/openai40848733",
+            "name": "openai40848733",
+            "type": "Microsoft.CognitiveServices/accounts",
+            "sku": {
+                "name": "S0"
+            },
+            "kind": "OpenAI",
+            "location": "swedencentral"
+        }
+    ]
+}
