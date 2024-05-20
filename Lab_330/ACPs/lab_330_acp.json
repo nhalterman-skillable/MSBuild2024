@@ -1,0 +1,59 @@
+{
+    "if": {
+        "not": {
+            "allOf": [
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.DocumentDB/mongoClusters"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/cosmosdb-aiassistant/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "mongodb"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "northeurope"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.CognitiveServices/accounts"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/cosmosdb-aiassistant/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "openai"
+                        },
+                        {
+                            "field": "Microsoft.CognitiveServices/accounts/sku.name",
+                            "equals": "S0"
+                        },
+                        {
+                            "field": "location",
+                            "in": [
+                                "swedencentral"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "Deny"
+    }
+}
