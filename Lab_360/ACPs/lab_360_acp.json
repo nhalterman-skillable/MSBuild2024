@@ -1,0 +1,179 @@
+{
+    "if": {
+        "not": {
+            "allOf": [
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.KeyVault/vaults"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "Project2"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.Network/virtualNetworks"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "equals": "VNET1"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.Network/networkInterfaces"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "Project"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.Compute/virtualMachines"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "Project2"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.Compute/disks"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "Project2"
+                        },
+                        {
+                            "field": "Microsoft.Compute/disks/sku.name",
+                            "contains": "StandardSSD_LRS"
+                        },
+                        {
+                            "field": "Microsoft.Compute/disks/sku.tier",
+                            "contains": "Standard"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.ContainerRegistry/registries"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "Microsoft.ContainerRegistry/registries/sku.name",
+                            "contains": "Basic"
+                        },
+                        {
+                            "field": "Microsoft.ContainerRegistry/registries/sku.tier",
+                            "contains": "Basic"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.KeyVault/vaults"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                }, 
+                {
+                    "anyOf": [
+                        {
+                            "field": "type",
+                            "contains": "Microsoft.ContainerInstance/containerGroups"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/RG1/"
+                        },
+                        {
+                            "field": "name",
+                            "contains": "build"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "Deny"
+    }
+}
