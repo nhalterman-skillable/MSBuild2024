@@ -1,0 +1,89 @@
+{
+    "if": {
+        "not": {
+            "anyOf": [
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.web/serverfarms"
+                        },
+                        {
+                            "field": "name",
+                             "matchinsensitively": "api-............."
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-contoso-health-app"
+                        },
+                        {
+                            "field": "Microsoft.web/serverfarms/sku.capacity",
+                            "lessOrEquals": 1
+                        },
+                        {
+                            "field": "Microsoft.web/serverfarms/sku.name",
+                            "equals": "Y1"
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.web/sites"
+                        },
+                        {
+                            "field": "id",
+                            "contains": "/resourceGroups/rg-contoso-health-app"
+                        },
+                        {
+                            "field": "name",
+                             "matchinsensitively": "api-............."
+                        },
+                        {
+                            "field": "location",
+                            "In": [
+                                "[resourceGroup().location]"
+                            ]
+                        },
+                        {
+                            "field": "location",
+                            "notEquals": "global"
+                        }
+                    ]
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Storage/storageAccounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.DocumentDB/databaseAccounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Web/staticSites"
+                },
+                {
+                    "field": "type",
+                    "contains": "Microsoft.CognitiveServices/accounts"
+                },
+                                {
+                    "field": "type",
+                    "contains": "Microsoft.Insights/components"
+                },
+                {
+                    "field": "type",
+                    "contains": "microsoft.insights/actiongroups"
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "deny"
+    }
+}
